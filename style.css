@@ -1,0 +1,128 @@
+/* Global Reset & Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFF8F0; /* soft cream background */
+  color: #2F4F4F; /* dark slate text */
+  line-height: 1.6;
+}
+
+header {
+  background-color: #008080; /* deep teal */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #FF6F61; /* coral hover */
+}
+
+h1, h2, h3 {
+  color: #008080; /* deep teal headings */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Product List Styling */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  background-color: #B2DFDB; /* light teal card */
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.product h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #008080;
+}
+
+button {
+  background-color: #008080; /* deep teal */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #FF6F61; /* coral hover */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.sold-out {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #008080; /* deep teal */
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* Contact Form */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  width: auto;
+}
